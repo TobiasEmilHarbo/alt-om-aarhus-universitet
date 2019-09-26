@@ -2,6 +2,7 @@ import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -10,13 +11,17 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { SignInPageComponent } from './pages/sign-in-page/sign-in-page.component';
+import { SignInFormComponent } from './forms/sign-in-form/sign-in-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignInPageComponent
+    SignInPageComponent,
+    SignInFormComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
