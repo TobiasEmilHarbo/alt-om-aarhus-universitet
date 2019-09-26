@@ -9,10 +9,12 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { SignInPageComponent } from './pages/sign-in-page/sign-in-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignInPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
