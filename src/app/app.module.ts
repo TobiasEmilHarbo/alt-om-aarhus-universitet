@@ -12,12 +12,14 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { SignInPageComponent } from './pages/sign-in-page/sign-in-page.component';
 import { SignInFormComponent } from './forms/sign-in-form/sign-in-form.component';
+import { IndexPageComponent } from './pages/index-page/index-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInPageComponent,
-    SignInFormComponent
+    SignInFormComponent,
+    IndexPageComponent
   ],
   imports: [
     FormsModule,
